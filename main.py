@@ -13,7 +13,7 @@ day_of_week = now.weekday()
 with open("quotes.txt", 'r') as file:
     quote = r.choice(file.readlines())
 
-if day_of_week == 3:
+if day_of_week == 4:
     with smtplib.SMTP("smtp.gmail.com") as connection:
         connection.starttls()
         connection.login(user=my_email, password=password)
